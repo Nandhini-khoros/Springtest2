@@ -28,6 +28,11 @@ public class UserDaoClass implements UserDao{
 
     }
 
+    /**
+     *
+     * @return
+     * @throws SQLException
+     */
     public List<User> getUsers() throws SQLException {
 
         Statement stat= conc.createStatement();
