@@ -31,6 +31,11 @@ public class UserDaoClass implements com.example.SpringTest2.dao.UserDao {
 
     }
 
+    /**
+     *
+     * @return
+     * @throws SQLException
+     */
     public List<User> getUsers() throws SQLException {
 
         Statement stat= conc.createStatement();
@@ -58,6 +63,13 @@ public class UserDaoClass implements com.example.SpringTest2.dao.UserDao {
         return users;
 
     }
+
+    /**
+     *
+     * @param id
+     * @return
+     * @throws SQLException
+     */
     public List<User> getUser(int id) throws SQLException {
 
         PreparedStatement stat = conc.prepareStatement("select * from user where id= ?");
