@@ -116,6 +116,11 @@ public class UserDaoClass implements com.example.SpringTest2.dao.UserDao {
         stat.executeUpdate();
     }
 
+    /**
+     * @param user
+     * @param id
+     * @throws SQLException
+     */
     public void updateUser(User user, /*String*/int id) throws SQLException {
 
         PreparedStatement stat = conc.prepareStatement(" UPDATE user SET name = ?,age = ?,email = ?,country = ? WHERE id = ?;");
