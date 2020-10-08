@@ -8,7 +8,10 @@ package com.example.SpringTest2.dao;
         import java.util.*;
         import java.util.List;
 
-public class UserDaoClass implements UserDao{
+/**
+ * crud operations
+ */
+public class UserDaoClass implements com.example.SpringTest2.dao.UserDao {
 
     List<User> users = new ArrayList<User>();
 
