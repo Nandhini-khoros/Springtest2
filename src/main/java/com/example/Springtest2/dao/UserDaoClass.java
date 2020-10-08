@@ -60,6 +60,13 @@ public class UserDaoClass implements UserDao{
         return users;
 
     }
+
+    /**
+     *
+     * @param id
+     * @return
+     * @throws SQLException
+     */
     public List<User> getUser(int id) throws SQLException {
 
         PreparedStatement stat = conc.prepareStatement("select * from user where id= ?");
